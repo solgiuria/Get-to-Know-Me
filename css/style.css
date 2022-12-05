@@ -4,24 +4,25 @@
     margin: 0;
     padding: 0;
 }
+/* todo text al medio y lo modifico part. si es necesario */
+body{
+    
+}
+
 /* dentro de header div grande para darle % */
 header{
     width:100%;
-    background-color:red;
     line-height: 50px;
-    display: flex;
-    justify-content: center;
     text-transform: uppercase;
 }
+/* dentro de header div hijo para darle % */
 
 .hijo{
     width: 70%;
+    margin: 0 auto;
     display:flex;
     justify-content: space-between;
     align-items: center; 
-}
-nav{
-    
 }
 nav a{
     text-decoration: none;
@@ -31,4 +32,32 @@ nav a{
 .redes a{
     color: black;
     padding-left: 20px;
+}
+
+
+
+/* comienza la seccion 1 */
+
+.saludo{
+    width: 100%;
+    background-color:#f5df4e;
+}
+.sec1{
+    width: 70%;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+/* comienza la seccion 2 */
+
+ul{
+    list-style: none;
 }
