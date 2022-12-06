@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+ @import url('https://fonts.googleapis.com/css2?family=Jost&family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap'); 
 
 *{
     margin: 0;
@@ -6,9 +7,10 @@
 }
 /* todo text al medio y lo modifico part. si es necesario */
 body{
-    
+    font-family: 'Poppins', sans-serif;
+    color: rgb(33, 37, 41);
 }
-
+/* comienza el header */
 /* dentro de header div grande para darle % */
 header{
     width:100%;
@@ -20,11 +22,17 @@ header{
 .hijo{
     width: 70%;
     margin: 0 auto;
+    padding: 10px 0px;
     display:flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;  
+}
+.logo{
+    font-weight: 700;
 }
 nav a{
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
     color: black;
     padding-left: 25px;
@@ -34,6 +42,10 @@ nav a{
     padding-left: 20px;
 }
 
+.bi{
+    width:20px ;
+    height:20px ;
+}
 
 
 /* comienza la seccion 1 */
@@ -44,15 +56,61 @@ nav a{
 }
 .sec1{
     width: 70%;
+    height: 92.9vh;
     margin: 0 auto;
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
 
+.holasoy{
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 62.4px;
+}
+.develop{
+    font-size: 104px;
+    text-transform: uppercase;
+    line-height: 135px;
+}
+.develop+p{
+    font-size: 20px;
+    line-height: 37.8px;
+    font-weight: 400;
+}
 
 
+.butsec1{
+    background-color:rgb(33, 37, 41);
+    color: white;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.butsec1+a{
+    color: rgb(33, 37, 41);
+    margin: 0px 40px;
+}
 
-
+.myimg{
+    width: 450px;
+    height: 450px;
+    border-radius:50%;
+    border: 17px solid white;
+    box-shadow:0 0 20px 4px rgba(167, 162, 162, 0.5);
+}
+.img{
+    width: 450px;
+    height: 450px;
+    border-radius:50%;
+    object-fit: cover;
+    
+}
 
 
 
