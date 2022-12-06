@@ -38,13 +38,8 @@ nav a{
     padding-left: 25px;
 }
 .redes a{
-    color: black;
+    color: rgb(0, 0, 0);
     padding-left: 20px;
-}
-
-.bi{
-    width:20px ;
-    height:20px ;
 }
 
 
@@ -115,7 +110,115 @@ nav a{
 
 
 /* comienza la seccion 2 */
+.aboutme{
+    
+}
+.sec2{
+    width: 70%;
+    margin:0 auto;
+
+    
+}
+
+/* titulo y presentacion */
+
+
+.textcirc{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.title{
+    text-align: center;
+}
+
+.title p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    background-color:#f5df4e;
+    display: inline-block;
+    margin-top: 90px;
+    padding: 0px 10px;
+}
+
+.title h1{
+    font-size: 40px;
+    font-weight: 600px;
+    line-height: 48px;
+    margin-top: 20px;
+}
+
+.text{
+    width: 63%;
+    height: 280px;
+    margin-right: 90px;
+    margin-bottom:30px;
+    padding-right: 70px;
+    
+    
+
+}
+.text h1{
+    font-size: 32px;
+    margin-top: 60px;
+    
+}
+.text p{
+    font-size: 21px;
+    line-height: 37.8px;
+    font-weight: 400;
+    
+    
+}
+
+/* 22 con circulo */
+.textcirc{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.circulo22{
+    border-radius: 50%;
+    background-color:#f5df4e;
+    width: 110px;
+    height: 110px;
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.numero{
+    font-size: 144px;
+    font-weight: 600;
+    line-height: 187px;
+    color: rgb(76, 77, 77);
+}
+
+/* aqui comienzan listas */
+
+.listas{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
 
 ul{
     list-style: none;
+}
+ul :first-child{
+    color: rgb(108, 117, 125);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+}
+
+li+li{
+    font-size: 18px;
+    font-weight:600;
+    line-height: 32.4px;
 }
