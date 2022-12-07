@@ -20,7 +20,7 @@ header{
 /* dentro de header div hijo para darle % */
 
 .hijo{
-    width: 70%;
+    width: 68%;
     margin: 0 auto;
     padding: 10px 0px;
     display:flex;
@@ -50,7 +50,7 @@ nav a{
     background-color:#f5df4e;
 }
 .sec1{
-    width: 70%;
+    width: 68%;
     height: 92.9vh;
     margin: 0 auto;
     display: flex;
@@ -114,7 +114,7 @@ nav a{
     
 }
 .sec2{
-    width: 70%;
+    width: 68%;
     margin:0 auto;
 
     
@@ -154,7 +154,7 @@ nav a{
     width: 63%;
     height: 280px;
     margin-right: 90px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
     padding-right: 70px;
     
     
@@ -205,6 +205,7 @@ nav a{
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    margin-bottom: 90px;
 }
 
 ul{
@@ -226,20 +227,60 @@ li+li{
 
 /* empieza seccion 3 */
 
-.skills{
-    background: #dddddd; 
+ .skills{
+    background: #fafafa; 
 }
+
 .sec3{
-    width: 70%;
+    width: 68%;
     margin: 0 auto;
-    text-align: center;
+    text-align: center; 
+}
+
+
+.cont{
+    margin: 32px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.contboth{
+   padding: 30px 0px;
+}
+
+.hn{
+    width: 380px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
     
 }
+.hn h1{
+    font-size: 24px;
+    font-weight: 600;
+    line-height:28px;
+    margin-top: 20px;
+}
 
-.nietos{
-    display: flex;
+.hn p{
+    margin-top: 30px;
+}
+
+.me{
+   font-size: 55px;
+   color: #f5df4e;
+   margin-top: 40px;
+}
+
+.fa-solid{
+    font-size: 80px;
+}
+
+/* comienza seccion 4 */
+
+.resume{
 
 }
-.text2{
-    margin-top: 90px;
+.sec4{
+    width: 68%;
+    margin: 0 auto;
 }
