@@ -263,6 +263,10 @@ li+li{
 
 .hn p{
     margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(108, 117, 127);
+    line-height: 28.8px;
 }
 
 .me{
@@ -274,6 +278,10 @@ li+li{
 .fa-solid{
     font-size: 80px;
 }
+
+
+
+
 
 /* comienza seccion 4 */
 
@@ -290,10 +298,51 @@ li+li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top:80px;
+   
 }
 
 .ambos{
     width: 45%;
-    border-left: 3px solid #f5df4e ;
-    padding-left: 20px;
+    /* border-left: 3px solid #f5df4e ;
+    padding-left: 20px; */
 }
+
+.ambos h1{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+}
+
+.bleft{
+    border-left: 2px solid #f5df4e;
+}
+
+.btop{
+    border-top: 1px solid rgb(212, 209, 209);
+}
+
+.cadatext{
+    margin: 20px 0px;
+    margin-left: 20px;
+    
+}
+
+.cadatext>h2{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.cadatext>h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cadatext>p{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 20px;
+    color: rgb(108, 117, 127);
+    line-height: 28.8px;
+}
+
