@@ -283,4 +283,17 @@ li+li{
 .sec4{
     width: 68%;
     margin: 0 auto;
+    
+}
+
+.eduexp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ambos{
+    width: 45%;
+    border-left: 3px solid #f5df4e ;
+    padding-left: 20px;
 }
