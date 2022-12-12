@@ -14,18 +14,18 @@
             <h1 class="logo">Sol</h1>
             
                 <nav>
-                    <a href="">Inicio</a>
-                    <a href="">Acerca de</a>
-                    <a href="">Servicios</a>
-                    <a href="">Resumen</a>
-                    <a href="">Portfolio</a>
-                    <a href="">Contacto</a>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#acercade">Acerca de</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#resumen">Resumen</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contacto">Contacto</a>
                 </nav>
             
             <div class="redes">
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/solgiuria/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/solgiuria?tab=followers" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://twitter.com/sol_giuria" target="_blank"><i class="bi bi-twitter"></i></a>
             </div>
         </div>  
     </header>
@@ -33,14 +33,21 @@
 
    <!-- seccion 1 mi foto -->
 
-        <section class="saludo">
+        <section class="saludo" id="inicio">
             <div class="sec1">
                 <div>
                     <h1 class="holasoy">Hola, soy Freelance </h1>
-                    <h1 class="develop">Developer</h1>
+                    <h1 class="develop">Developerr</h1>
                     <p>establecida en Mar del Plata, Argentina</p>
-                    <button class="butsec1">Ve mis Trabajos</button>
-                    <a href="">Contactame</a>
+
+                    <div class="button1">
+                        <button class="butsec1"><a href="#portfolio">Ve mis Trabajos</a></button>
+                        <div class="contactame">
+                            <a href="">Contactame</a>
+                            <i class="bi bi-arrow-down-circle"></i>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="myimg">
                     <img class="img" src="img/sol.jpg" alt="">
@@ -51,7 +58,7 @@
 
 <!-- seccion 2 sobre mi -->
 
-        <section class="aboutme">
+        <section class="aboutme" id="acercade">
             <div class="sec2">
 
                 <div class="title">
@@ -96,7 +103,7 @@
 
 <!-- seccion 3 -->
 
-        <section class="skills">
+        <section class="skills" id="servicios">
             <div class="sec3">
 
                 <div class="title ">
@@ -151,7 +158,7 @@
 
 <!-- seeccion 4 -->
 
-        <section class="resume">
+        <section class="resume" id="resumen">
             <div class="sec4">
                 <div class="title">
                     <p>Currículum</p>
@@ -165,19 +172,19 @@
                             <div class="cadatext">
                                 <h2>Secundario Completo </h2>
                                 <h3>Instituto Carlos Tejedor/ 2006-2021</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                                <p>Colegio orientado a lo humanístico y económico, bases de informática, talleres de idioma, principalmente ingles.</p>
                             </div>
                                 
                             <div class="cadatext btop">
                                 <h2>Nivel B2 en Inglés</h2>
                                 <h3>Cem English/ 2010-2020 </h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                                <p>Gramática, vocabulario, habla y escucha desde el primer momento, con el avanzar de los años avanzaban los temas y la profundidad con que se los analizaba, se presentaban situaciones de debates en el salon y exámenes teóricos, asi como también presentaciones orales o interacciones con nativos entre otras cosas. </p>
                             </div>
                                 
                             <div class="cadatext btop">
                                 <h2>First Certificate Exam </h2>
                                 <h3>Cambridge Institute/ 2021</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                                <p>Preparación de diez meses via online junto a un tutor de Cambrigde nativo de Inglaterra. El exam presentó cuatro instancias, algunas individuales y otras en pareja. El resultado obtenido tras mi trabajo fue de un 176%.</p>
                             </div>
                         </div>    
                     </div>
@@ -190,13 +197,13 @@
                             <div class="cadatext">
                                 <h2>HTML</h2>
                                 <h3>UTN Buenos Aires/ 2022-2023</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p>Buena maquetación, buenas prácticas, estructura básica y etiquetas frecuentes, formularios, landing page, id, herencias, sections, enlaces internos y externos, ect.</p>
                             </div>
                                 
                             <div class="cadatext btop">
                                 <h2>CSS</h2>
                                 <h3>UTN Buenos Aires/ 2022-2023</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p>Margin y padding,width y height, centrado, valor y propiedad,selectores, clases y elementos, pseudo-clases y pseudo-elementos, border y shadow, colorimetría, unidades relativas y absolutas, elementos en línea y en bloque, flexbox avanzado, alineación y dirección en flexbox, flex items, variables, animaciones, transiciones, etc.</p>
                             </div>
                                 
                             <div class="cadatext btop">
@@ -280,7 +287,7 @@
 <!-- seccion 5 -->
 
 
-        <section class=" skills last-projects">
+        <section class=" skills last-projects" id="portfolio">
             <div class="sec5">
                 <div class="title portfolio">
                     <p>Portfolio</p>
@@ -316,7 +323,8 @@
 <!-- footer -->
 
     <footer>
-        <div class="mi-footer">
+        <div class="mi-footer" id="contacto">
+
             <div class="f-box">
                 <h1>Mantengámonos en Contacto</h1>
                 <p>Siempre estoy dispuesta a discutir sobre nuevos proyectos y me emociona enfrentarme a nuevos desafíos. Por favor envíame tanta  información como sea posible, para sacar el máximo provecho de nuestro primer encuentro.</p>
@@ -329,6 +337,11 @@
                         <li class="data">Número</li>
                         <li>+54 9 223 306 8531</li>
                     </ul>
+                </div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/solgiuria/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com/sol_giuria" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://github.com/solgiuria?tab=followers" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
             </div>
 
@@ -346,6 +359,11 @@
                         <label for="">Cómo puedo ayudarte?</label>
                         <textarea name="hola" id="" cols="30" rows="10"></textarea>
                     </form>
+                    <div>
+                        <button type="submit" class="butsec1">Enviar</button>
+                    </div>
+
+        
                 </div>
             </div>
 
