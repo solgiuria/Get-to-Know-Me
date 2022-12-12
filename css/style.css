@@ -16,6 +16,8 @@ header{
     width:100%;
     line-height: 50px;
     text-transform: uppercase;
+    position: fixed;
+    background-color: white;
 }
 /* dentro de header div hijo para darle % */
 
@@ -30,12 +32,21 @@ header{
 .logo{
     font-weight: 700;
 }
+
+nav{
+    width: 700px;
+    text-align: center;
+}
+
 nav a{
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     color: black;
-    padding-left: 25px;
+    margin: 0px 10px;
+}
+nav a:hover{
+    border-bottom: 3px solid #f5df4e;
 }
 .redes a{
     color: rgb(0, 0, 0);
@@ -51,7 +62,7 @@ nav a{
 }
 .sec1{
     width: 68%;
-    height: 92.9vh;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -156,21 +167,22 @@ nav a{
     margin-right: 90px;
     margin-bottom: 30px;
     padding-right: 70px;
-    
-    
-
 }
-.text h1{
+
+.text :first-child{
     font-size: 32px;
     margin-top: 60px;
-    
+    margin-bottom: 15px;
 }
-.text p{
+
+b{
+    border-bottom: 3px solid #f5df4e;
+}
+
+.presentacion{
     font-size: 21px;
     line-height: 37.8px;
-    font-weight: 400;
-    
-    
+    font-weight: 400;      
 }
 
 /* 22 con circulo */
@@ -186,11 +198,19 @@ nav a{
     background-color:#f5df4e;
     width: 110px;
     height: 110px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.circ-years{
     margin-left: 90px;
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    flex-direction: column;
+}
+.years-exp{
+    font-size: 22px;
 }
 .numero{
     font-size: 144px;
@@ -304,8 +324,7 @@ li+li{
 
 .ambos{
     width: 45%;
-    /* border-left: 3px solid #f5df4e ;
-    padding-left: 20px; */
+    
 }
 
 .ambos h1{
@@ -345,4 +364,197 @@ li+li{
     color: rgb(108, 117, 127);
     line-height: 28.8px;
 }
+
+/* barras de porcentaje */
+.cont-cont-bb{
+    margin: 60px 0px;
+}
+.cont-cont-bb h1{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+}
+.cont-box-barras{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-de-barras{
+    font-size: 16px;
+    font-weight: 500;
+    width: 600px;
+    margin: 30px 0px;
+}
+.numporc{
+    float: right;
+}
+
+
+.barra{
+    width: 600px;
+    background-color: rgb(230, 230, 240);
+    border-radius: 40px;
+    display: flex;
+    align-items: centr;
+}
+.porcentaje1{
+    width: 79%;
+    height: 9px;
+    border: 0px;
+    border-radius: 20px;
+    background: #f5df4e;
+}
+.porcentaje2{
+    width: 83%;
+    height: 9px;
+    border: 0px;
+    border-radius: 20px;
+    background: #f5df4e;
+}
+.porcentaje3{
+    width: 50%;
+    height: 9px;
+    border: 0px;
+    border-radius: 20px;
+    background: #f5df4e;
+}
+.porcentaje4{
+    width: 65%;
+    height: 9px;
+    border: 0px;
+    border-radius: 20px;
+    background: #f5df4e;
+}
+.porcentaje5, .porcentaje6{
+    width: 10%;
+    height: 9px;
+    border: 0px;
+    border-radius: 20px;
+    background: #f5df4e;
+}
+
+/* boton cv */
+
+.cont-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.button-cv{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid rgb(33, 37, 41);
+    color: rgb(33, 37, 41); 
+    padding: 15px 40px;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.button-cv:hover{
+    background-color: rgb(33, 37, 41);
+    color: white;
+}
+
+
+/* Aqui comienza seccion 5 */
+
+.sec5{
+    width: 68%;
+    margin: 0 auto;
+    text-align: center;
+}
+.portfolio{
+    margin-bottom: 40px;
+}
+.cont-a-img a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    margin: 0px 10px;
+}
+.cont-a-img a:hover{
+    border-bottom: 3px solid #f5df4e;
+    color: black;
+}
+.cont-box-imgs{
+    padding: 90px 0px;
+}
+.imgs{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgs img{
+    width: 415px;
+    height: 350px;
+    
+}
+ 
+
+/* aqui comienza el footer */
+
+footer{
+    background-color: #f5df4e;
+}
+.mi-footer{
+    width: 68%;
+    margin: 0 auto;
+    padding: 90px 0px;
+    display:flex;
+    justify-content: space-between;
+}
+
+/* parte contacto */
+
+.f-box{
+    width: 45%;
+    
+}
+.f-box h1{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 45px;
+}
+.f-box p{
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 37.8px;
+    margin-bottom: 45px;
+    
+}
+.data{
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(33, 37, 41);
+}
+
+/* parte mail */
+label{
+    margin: 20px 0px;
+}
+input{
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+    background-color: #f5df4e;
+    width: 100%;
+    margin: 30px 0px;
+}
+textarea{
+    background-color: #f5df4e;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+    display: block;
+    width: 100%;
+}
+
+
 
