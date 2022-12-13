@@ -1,20 +1,35 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
  @import url('https://fonts.googleapis.com/css2?family=Jost&family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap'); 
 
+/* define variables */
+
+ :root{
+    --main-color:#f5df4e;
+ }
+ :root{
+    --letter-color:rgb(33, 37, 41);
+ }
+
+
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;   
 }
+
 /* todo text al medio y lo modifico part. si es necesario */
 body{
     font-family: 'Poppins', sans-serif;
-    color: rgb(33, 37, 41);
+    color: var(--letter-color);
 }
+
+html{
+    scroll-behavior: smooth;   
+}
+
 /* comienza el header */
 /* dentro de header div grande para darle % */
 header{
     width:100%;
-    height: 70px;
     line-height: 50px;
     text-transform: uppercase;
     position: fixed;
@@ -33,6 +48,9 @@ header{
 .logo{
     font-weight: 700;
 }
+.logo:hover{
+    transform: scale(1.1);
+}
 
 nav{
     width: 700px;
@@ -43,21 +61,31 @@ nav a{
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    color: rgb(33, 37, 41);
+    color: var(--letter-color);
     margin: 0px 10px;
 }
 
 nav a:hover{
-    border-bottom: 3px solid #f5df4e;
+    border-bottom: 3px solid var(--main-color);
 }
 
 .redes a{
-    color: rgb(0, 0, 0);
-    padding-left: 20px;
-    transition-duration: 0.5s;
-}
-.redes a:hover{
     font-size: 20px;
+    color: var(--letter-color);
+    padding-right: 20px;
+    
+}
+
+.bi-instagram:hover{
+    color: rgb(240, 71, 71);
+    transform: scale(2);
+    
+}
+.bi-twitter:hover{
+    color: rgb(7, 189, 250);
+}
+.bi-github:hover{
+    color: black;
 }
 
 
@@ -65,7 +93,8 @@ nav a:hover{
 
 .saludo{
     width: 100%;
-    background-color:#f5df4e;
+    /* background-color:#f5df4e; */
+    background-color: var(--main-color);
 }
 .sec1{
     width: 68%;
@@ -87,7 +116,7 @@ nav a:hover{
 
 /* animacion developer se escribe solo */
 
-@keyframes escribir {
+@keyframes write {
     0%{
         width: 0px;
     }
@@ -95,16 +124,30 @@ nav a:hover{
         width: 100%;
     }
 }
+/* @keyframes blink {
+    0%{
+        border-right-color: transparent;
+    }
+    50%{
+        border-right-color: black;
+    }
+    100%{
+        border-right-color: transparent;
+    }
+} */
+
 
 .develop{
-    animation: escribir 3s steps(9) infinite;
+    /* animation: blink 1s steps(1) infinite;  */
+    animation: write 3s steps(9) infinite;   
 }
+
 
 .develop{
     font-size: 104px;
     text-transform: uppercase;
     line-height: 135px;
-    border-right: 2px solid rgb(33, 37, 41); 
+    border-right: 2px solid var(--letter-color); 
     overflow: hidden;
 }
 .develop+p{
@@ -120,7 +163,7 @@ nav a:hover{
     
 }
 .butsec1{
-    background-color:rgb(33, 37, 41);
+    background-color: var(--letter-color);
     line-height: 24px;
     font-size: 16px;
     padding: 15px 30px;
@@ -137,7 +180,7 @@ nav a:hover{
     
 }
 .contactame a{
-    color: rgb(33, 37, 41);
+    color: var(--letter-color);
     margin-left: 40px;
     padding-right: 10px;
 }
@@ -191,7 +234,7 @@ nav a:hover{
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    background-color:#f5df4e;
+    background-color: var(--main-color);
     display: inline-block;
     margin-top: 90px;
     padding: 0px 10px;
@@ -219,7 +262,7 @@ nav a:hover{
 }
 
 b{
-    border-bottom: 3px solid #f5df4e;
+    border-bottom: 3px solid var(--main-color);
 }
 
 .presentacion{
@@ -238,7 +281,7 @@ b{
 
 .circulo22{
     border-radius: 50%;
-    background-color:#f5df4e;
+    background-color:var(--main-color);
     width: 110px;
     height: 110px;
     margin: 30px 0px;
@@ -334,7 +377,7 @@ li+li{
 
 .me{
    font-size: 55px;
-   color: #f5df4e;
+   color: var(--main-color);
    margin-top: 40px;
 }
 
@@ -377,7 +420,7 @@ li+li{
 }
 
 .bleft{
-    border-left: 2px solid #f5df4e;
+    border-left: 2px solid var(--main-color);
 }
 
 .btop{
@@ -445,35 +488,35 @@ li+li{
     height: 9px;
     border: 0px;
     border-radius: 20px;
-    background: #f5df4e;
+    background: var(--main-color);
 }
 .porcentaje2{
     width: 83%;
     height: 9px;
     border: 0px;
     border-radius: 20px;
-    background: #f5df4e;
+    background: var(--main-color);
 }
 .porcentaje3{
     width: 50%;
     height: 9px;
     border: 0px;
     border-radius: 20px;
-    background: #f5df4e;
+    background: var(--main-color);
 }
 .porcentaje4{
     width: 65%;
     height: 9px;
     border: 0px;
     border-radius: 20px;
-    background: #f5df4e;
+    background: var(--main-color);
 }
 .porcentaje5, .porcentaje6{
     width: 10%;
     height: 9px;
     border: 0px;
     border-radius: 20px;
-    background: #f5df4e;
+    background: var(--main-color);
 }
 
 /* boton cv */
@@ -490,15 +533,15 @@ li+li{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    border: 2px solid rgb(33, 37, 41);
-    color: rgb(33, 37, 41); 
+    border: 2px solid var(--letter-color);
+    color: var(--letter-color); 
     padding: 15px 40px;
     background-color: rgb(255, 255, 255);
     transition: background-color 0.5s ease-in-out;
 }
 
 .button-cv:hover{
-    background-color: rgb(33, 37, 41);
+    background-color: var(--letter-color);
     color: white;
 }
 
@@ -522,7 +565,7 @@ li+li{
     margin: 0px 10px;
 }
 .cont-a-img a:hover{
-    border-bottom: 3px solid #f5df4e;
+    border-bottom: 3px solid var(--main-color);
     color: black;
 }
 .cont-box-imgs{
@@ -544,7 +587,7 @@ li+li{
 /* aqui comienza el footer */
 
 footer{
-    background-color: #f5df4e;
+    background-color: var(--main-color);
 }
 .mi-footer{
     width: 68%;
@@ -570,14 +613,22 @@ footer{
     font-size: 21px;
     font-weight: 400;
     line-height: 37.8px;
-    margin-bottom: 45px;
-    
+    margin-bottom: 45px;   
 }
+
+.contact-info{
+    margin-bottom: 20px;
+}
+
 .data{
     font-size: 80px;
     font-weight: 600;
     line-height: 24px;
-    color: rgb(33, 37, 41);
+    color: var(--letter-color);
+}
+
+.redes-footer{
+    margin-top: 20px;
 }
 
 /* parte mail */
@@ -588,18 +639,36 @@ input{
     display: block;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.37);
-    background-color: #f5df4e;
+    background-color: var(--main-color);
     width: 100%;
+    height: 50px;
     margin: 30px 0px;
+    outline: none;
 }
 textarea{
-    background-color: #f5df4e;
+    background-color: var(--main-color);
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+    outline:none;
+    margin-top: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     display: block;
     width: 100%;
+    height: 100px;
     resize: vertical;
 }
 
+.but-footer{
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+}
 
+input[type=text]:focus::-webkit-input-placeholder,input[type=email]:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
+    opacity: 0;
+    
+}
+
+input:focus,textarea:focus{
+    border-bottom: 2px solid rgba(83, 78, 78, 0.7);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.034));
+}
 
