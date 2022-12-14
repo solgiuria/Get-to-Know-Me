@@ -1,4 +1,4 @@
-# Bienvenido! :tw-1f44b: :fa-github-square:
+# Bienvenido! 
 ## Este es el repositorio de la web "Get to know Me"
 
 ***Qué veras en esta web?***
