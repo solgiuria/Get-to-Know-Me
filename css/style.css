@@ -123,7 +123,7 @@ nav a:hover{
     100%{
         width: 100%;
     }
-}
+} 
 /* @keyframes blink {
     0%{
         border-right-color: transparent;
@@ -299,7 +299,7 @@ b{
     font-size: 22px;
 }
 .numero{
-    font-size: 144px;
+    font-size: 130px;
     font-weight: 600;
     line-height: 187px;
     color: rgb(76, 77, 77);
