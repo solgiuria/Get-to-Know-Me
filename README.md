@@ -1,6 +1,5 @@
-# Bienvenido! 👋🏻👩🏻‍💻
+# Bienvenido! 
 ## Este es el repositorio de la web "Get to know Me"
-[![screen-tp.jpg](https://i.postimg.cc/RVfTr6Kg/screen-tp.jpg)](https://postimg.cc/Ln9PLsyP)
 
 ***Qué veras en esta web?***
 
