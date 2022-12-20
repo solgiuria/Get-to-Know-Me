@@ -21,3 +21,7 @@ Conocerme tanto personal como profesionalmente:
 - HTML
 - CSS
 - Bootstrap
+
+***Visita la página:***
+
+https://solgiuria.github.io/Get-to-Know-Me/
