@@ -33,7 +33,9 @@ header{
     line-height: 50px;
     text-transform: uppercase;
     position: fixed;
+    z-index: 10;
     background-color: white;
+    box-shadow: 0px 3px 12px rgba(218, 216, 216, 0.5);
 }
 /* dentro de header div hijo para darle % */
 
@@ -93,7 +95,6 @@ nav a:hover{
 
 .saludo{
     width: 100%;
-    /* background-color:#f5df4e; */
     background-color: var(--main-color);
 }
 .sec1{
@@ -124,6 +125,7 @@ nav a:hover{
         width: 100%;
     }
 } 
+
 /* @keyframes blink {
     0%{
         border-right-color: transparent;
@@ -134,11 +136,14 @@ nav a:hover{
     100%{
         border-right-color: transparent;
     }
-} */
-
+}
 
 .develop{
-    /* animation: blink 1s steps(1) infinite;  */
+    animation: blink 1s steps(1) infinite;  
+} */
+
+.develop{
+   
     animation: write 3s steps(9) infinite;   
 }
 
@@ -556,7 +561,7 @@ li+li{
 .portfolio{
     margin-bottom: 40px;
 }
-.cont-a-img a{
+.cont-ancla a{
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -564,7 +569,7 @@ li+li{
     text-decoration: none;
     margin: 0px 10px;
 }
-.cont-a-img a:hover{
+.cont-ancla a:hover{
     border-bottom: 3px solid var(--main-color);
     color: black;
 }
@@ -579,10 +584,54 @@ li+li{
 
 .imgs img{
     width: 415px;
-    height: 350px;
+    height: 350px;  
+}
+
+/* aqui comienza el efecto hover img */
+ 
+.cont-img{
+    position:relative;
+    width: 415px;
     
 }
- 
+
+.imagen-fondo{
+    display: block;
+    width: 100%;
+    width: 415px;
+    height: 350px;
+}
+
+.cont-texto{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .75s ease-in-out;
+    
+}
+
+.cont-img:hover .cont-texto{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .5);
+}
+.cont-img:hover .texto{
+    top: 47%;
+    left: 39%; 
+}
+
+.texto{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: -20%;
+    left: 39%;
+    transition: .75s ease-in-out;
+}
 
 /* aqui comienza el footer */
 
